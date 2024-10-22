@@ -24,13 +24,13 @@ public class ProductController {
         list = myService.addProduct(product);
         return list;
     }
-    /*@PostMapping("/del/{id}")
-    public List<Product>  removeProduct(@PathVariable int id,  @RequestBody Product product)
+    @PostMapping("/del/{id}")
+    public List<Product>  removeProduct(@PathVariable int id)
     {
         //send it to do business logic
-        list = myService.delProduct(id,product);
+        list = myService.delProduct(id);
         return list;
-    }*/
+    }
     @PutMapping("update/{id}")
     public List<Product> updateProduct(@PathVariable int id, @RequestBody Product product){
         list=myService.updateProduct(id,product);
