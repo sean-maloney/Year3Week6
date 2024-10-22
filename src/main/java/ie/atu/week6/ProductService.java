@@ -13,15 +13,15 @@ public class ProductService {
         myList.add(product);
         return myList;
     }
-    /*public List<Product> delProduct(Product product)
+    public List<Product> delProduct(int id)
     {
         for (Product p : myList) {//once function is called, it runs the code
-            if (p.getId().equals(id)) {
+            if (p.getId()==id) {
                 myList.remove(p);//removes product
             }
         }
     return myList;
-    }*/
+    }
     public List<Product> updateProduct(int id, Product product){
         for(Product p : myList){
             if(p.getId() == id){
